@@ -1,0 +1,123 @@
+[
+    {
+        "id": 1,
+        "batsman_img": "https://i.ibb.co.com/dfXrH5D/player-1.webp",
+        "profile": "https://real-image-url.com/virat_kohli_profile.jpg",
+        "name": "Virat Kohli",
+        "country_name": "India",
+        "player_type": "Top-order batsman",
+        "batting_type": "Right-handed",
+        "price": 1200000
+    },
+    {
+        "id": 2,
+        "batsman_img": "https://i.ibb.co.com/7CN0Cp0/player-2.jpg",
+        "profile": "https://real-image-url.com/babar_azam_profile.jpg",
+        "name": "Babar Azam",
+        "country_name": "Pakistan",
+        "player_type": "Top-order batsman",
+        "batting_type": "Right-handed",
+        "price": 1100000
+    },
+    {
+        "id": 3,
+        "batsman_img": "https://i.ibb.co.com/cXYG4JP/player-3.jpg",
+        "profile": "https://real-image-url.com/kane_williamson_profile.jpg",
+        "name": "Kane Williamson",
+        "country_name": "New Zealand",
+        "player_type": "Top-order batsman",
+        "batting_type": "Right-handed",
+        "price": 900000
+    },
+    {
+        "id": 4,
+        "batsman_img": "https://i.ibb.co.com/6mkH3Dc/player-4.jpg",
+        "profile": "https://real-image-url.com/steve_smith_profile.jpg",
+        "name": "Steve Smith",
+        "country_name": "Australia",
+        "player_type": "Top-order batsman",
+        "batting_type": "Right-handed",
+        "price": 950000
+    },
+    {
+        "id": 5,
+        "batsman_img": "https://i.ibb.co.com/BLddKMB/player-5.jpg",
+        "profile": "https://real-image-url.com/joe_root_profile.jpg",
+        "name": "Joe Root",
+        "country_name": "England",
+        "player_type": "Top-order batsman",
+        "batting_type": "Right-handed",
+        "price": 800000
+    },
+    {
+        "id": 6,
+        "batsman_img": "https://i.ibb.co.com/9p9pXBt/player-6.jpg",
+        "profile": "https://real-image-url.com/david_warner_profile.jpg",
+        "name": "David Warner",
+        "country_name": "Australia",
+        "player_type": "Opener",
+        "batting_type": "Left-handed",
+        "price": 850000
+    },
+    {
+        "id": 7,
+        "batsman_img": "https://i.ibb.co.com/8g3DNYX/player-7.jpg",
+        "profile": "https://real-image-url.com/rohit_sharma_profile.jpg",
+        "name": "Rohit Sharma",
+        "country_name": "India",
+        "player_type": "Opener",
+        "batting_type": "Right-handed",
+        "price": 1000000
+    },
+    {
+        "id": 8,
+        "batsman_img": "https://i.ibb.co.com/4Y7Dsnw/player-8.jpg",
+        "profile": "https://real-image-url.com/quinton_de_kock_profile.jpg",
+        "name": "Quinton de Kock",
+        "country_name": "South Africa",
+        "player_type": "Opener",
+        "batting_type": "Left-handed",
+        "price": 750000
+    },
+    {
+        "id": 9,
+        "batsman_img": "https://i.ibb.co.com/zhkMK8g/player-9.jpg",
+        "profile": "https://real-image-url.com/shai_hope_profile.jpg",
+        "name": "Shai Hope",
+        "country_name": "West Indies",
+        "player_type": "Middle-order batsman",
+        "batting_type": "Right-handed",
+        "price": 700000
+    },
+    {
+        "id": 10,
+        "batsman_img": "https://i.ibb.co.com/0fJyBmD/player-10.jpg",
+        "profile": "https://real-image-url.com/shubman_gill_profile.jpg",
+        "name": "Shubman Gill",
+        "country_name": "India",
+        "player_type": "Opener",
+        "batting_type": "Right-handed",
+        "price": 600000
+    },
+    {
+        "id": 11,
+        "batsman_img": "https://i.ibb.co.com/W2mRW2Y/player-11.jpg",
+        "profile": "https://real-image-url.com/tamim_iqbal_profile.jpg",
+        "name": "Tamim Iqbal",
+        "country_name": "Bangladesh",
+        "player_type": "Opener",
+        "batting_type": "Left-handed",
+        "price": 500000
+    },
+    {
+        "id": 12,
+        "batsman_img": "https://i.ibb.co.com/GML3vNq/player-12.jpg",
+        "profile": "https://real-image-url.com/nicholas_pooran_profile.jpg",
+        "name": "Nicholas Pooran",
+        "country_name": "West Indies",
+        "player_type": "Middle-order batsman",
+        "batting_type": "Left-handed",
+        "price": 550000
+    }
+]
+
