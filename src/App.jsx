@@ -7,6 +7,7 @@ import Available from './components/AvailableSection/Available';
 import SelectedInfo from './components/SelectedInfo/SelectedInfo';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import UpperCard from './components/UpperCard/UpperCard';
 
 function App() {
   const [coins, setCoin] = useState(0);
@@ -31,25 +32,23 @@ function App() {
 
 
 const handleSelectPlayer = (player) => {
-  // Check if the selected players are less than 6
+  // Check players less than 6
   if (selectedPlayers.length < 6) {
-    // Use find to check if the player is already selected
+    // player is already selected
     const playerExists = selectedPlayers.find(p => p.id === player.id);
 
-    // If the player is not already selected
+    // If player is not already selected
     if (!playerExists) {
-      // Check if the player price is less than or equal to the coins
+      // player price less than or equal to the coins
       if (coins >= player.price) {
         // Deduct player price from coins
         setCoin(coins - player.price);
-
-        // Add player to the squad
-        setSelectedPlayers([...selectedPlayers, player]);
-
-        // Show success toast notification
+        // Add player to selected
+        setSelectedPlayers([...selectedPlayers, player]); 
+        //   react toastify 
         toast.success(`Congrats!! ${player.name} is now in your squad.`, {
           position: "top-center",
-          autoClose: 2000, // Closes after 2 seconds
+          autoClose: 2000,
           progressClassName: 'progress-bar-red',
           closeOnClick: true,
           pauseOnHover: true,
@@ -57,7 +56,7 @@ const handleSelectPlayer = (player) => {
           icon: "✔️"
         });
       } else {
-        // If not enough coins, show error toast notification
+        // not enough coins, show error
         toast.error('Not enough coins to add this player!', {
           position: "top-center",
           autoClose: 3000,
@@ -69,7 +68,7 @@ const handleSelectPlayer = (player) => {
         });
       }
     } else {
-      // If player is already selected, show an error toast notification
+      // player already selected, show error 
       toast.error('Player already selected', {
         position: "top-center",
         autoClose: 2000,
@@ -81,7 +80,7 @@ const handleSelectPlayer = (player) => {
       });
     }
   } else {
-    // Show alert if more than 6 players are selected 
+    //  alert if more than 6 players
     toast.error('You have exceeded the limit to choose players.', {
       position: "top-center",
       autoClose: 3000,
@@ -99,7 +98,7 @@ const handleSelectPlayer = (player) => {
   const handleRemovePlayer = (id) => {
     setSelectedPlayers(selectedPlayers.filter(player => player.id !== id));
   };
-  // Redirect back to the Available section when "Add More Player" is clicked
+  
   const handleAddMorePlayer = () => {
     setIsActive({
       available: true,
@@ -109,18 +108,24 @@ const handleSelectPlayer = (player) => {
 
   return (
     <div>
-      <ToastContainer /> {/*Toast container for displaying notifications*/}
+      <ToastContainer /> 
+      {/* Navbar */}
       <Navbar coins={coins}></Navbar>
+      {/* Banner */}
       <Banner handleAddCoins={handleAddCoins}></Banner>
       {/* Available and Selected section */}
       <Available handleIsActiveState={handleIsActiveState} isActive={isActive}></Available>
-
+      {/*  */}
       {isActive.available ? (
         <Players onSelectPlayer={handleSelectPlayer}></Players>
       ) : (
         <SelectedInfo players={selectedPlayers} onRemovePlayer={handleRemovePlayer}
           handleAddMorePlayer={handleAddMorePlayer}></SelectedInfo>
       )}
+      {/* Footer */}
+
+      {/* UpperCard/Subscribe Card */}
+      <UpperCard></UpperCard>
     </div>
   );
 }
