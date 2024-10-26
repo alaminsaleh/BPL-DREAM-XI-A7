@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
 import { FaFlag } from "react-icons/fa6";
+// eslint-disable-next-line no-unused-vars
+import fakeData from '../../../public/fakeData.json'
 
 const Players = ({ onSelectPlayer }) => {
   const [players, setPlayers] = useState([]);
 
   useEffect(() => {
-    fetch('/public/fakeData.json')
+    fetch('fakeData.json')
       .then(res => res.json())
       .then(data => setPlayers(data));
   }, []);
@@ -22,7 +24,7 @@ const Players = ({ onSelectPlayer }) => {
               <h2 className="card-title "><img className="border-gray-400 border" src="https://img.icons8.com/?size=30&id=98957&format=png" alt="" />{player.name}</h2>
               <div className="flex items-center">
                 <p className="flex gap-2 items-center"><FaFlag />{player.country_name}</p>
-                <div className="border p-1 rounded-md"><small>{player.player_type}</small></div>
+                <div className="border p-1 rounded-md bg-gray-200"><small>{player.player_type}</small></div>
               </div>
               <hr />
               <h1 className="font-bold">Rating</h1>
@@ -32,7 +34,7 @@ const Players = ({ onSelectPlayer }) => {
               </div>
               <div className="flex justify-between items-center">
                 <h1>Price: ${player.price}</h1>
-                <button onClick={() => onSelectPlayer(player)} className="border p-1">
+                <button onClick={() => onSelectPlayer(player)} className="border-2  p-1 hover:bg-green-300">
                   Choose Player
                 </button>
               </div>
@@ -45,3 +47,4 @@ const Players = ({ onSelectPlayer }) => {
 };
 
 export default Players;
+
