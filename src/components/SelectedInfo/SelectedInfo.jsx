@@ -1,4 +1,3 @@
-
 const SelectedInfo = ({ players, onRemovePlayer, handleAddMorePlayer }) => {
     return (
         <div className="w-[90%] mx-auto">
@@ -7,7 +6,7 @@ const SelectedInfo = ({ players, onRemovePlayer, handleAddMorePlayer }) => {
                 {players.map(player => (
                     <div key={player.id} className="flex items-center justify-between p-4 border rounded-lg">
                         <div className="flex items-center">
-                            <img src={player.batsman_img} alt={player.name} className="w-16 h-16 mr-4" />
+                            <img src={player.batsman_img} alt={player.name} className="w-16 h-16 mr-4 rounded-full" />
                             <div>
                                 <h3 className="text-lg font-bold">{player.name}</h3>
                                 <p>{player.batting_type}</p>
@@ -20,7 +19,7 @@ const SelectedInfo = ({ players, onRemovePlayer, handleAddMorePlayer }) => {
                 ))}
             </div>
             {/* Button visible*/}
-            <div className="border border-black rounded-xl p-1 inline-block ">
+            <div className="border-2 border-black rounded-xl p-1 inline-block mt-5">
                 <button
                     onClick={handleAddMorePlayer}
                     className="bg-[#E7FE29] border border-[#E7FE29] text-black font-bold py-2 px-4 rounded-lg "
