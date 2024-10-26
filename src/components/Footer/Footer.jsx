@@ -5,12 +5,12 @@ const Footer = () => {
         <footer className="bg-neutral  text-neutral-content p-10  mt-[270px] md:mt-[230px] relative">
             <div className="  flex flex-col justify-between items-center space-y-8">
 
-                {/* Image at the top */}
+               
                 <div className="mt-[100px]">
                     <img src={profile} alt="Footer Logo" className="mb-6 md:mt-10 mx-auto" />
                 </div>
 
-                {/* Navigation items centered below the image */}
+                {/* Navigation */}
                 <div className=" flex flex-col sm:flex-row justify-around w-full mx-auto space-y-6 sm:space-y-0 sm:space-x-8">
 
                     <nav className="flex flex-col items-start mb-4 sm:mb-0 space-y-3">
@@ -22,7 +22,7 @@ const Footer = () => {
 
                     <nav className="flex flex-col items-start mb-4 sm:mb-0 space-y-2">
                         <h6 className="text-xl text-white">Quick-List</h6>
-                        <ul className="list-inside space-y-1" style={{ listStyleType: 'square'}}>
+                        <ul className="list-inside space-y-1" style={{ listStyleType: 'square' }}>
                             <li><a className="link link-hover">Home</a></li>
                             <li><a className="link link-hover">Contact</a></li>
                             <li><a className="link link-hover">About us</a></li>
@@ -52,6 +52,11 @@ const Footer = () => {
 
                 </div>
             </div>
+
+            <div className='w-full border-t-2 border-gray-600 mt-8 text-gray-300 text-center mb-3'>
+                <small>@2024 Al Amin All Rights Reserved.</small>
+            </div>
+
         </footer>
     );
 };

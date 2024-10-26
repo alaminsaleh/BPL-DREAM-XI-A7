@@ -3,10 +3,9 @@ import profile from '../../assets/images/logo.png'
 
 const Navbar = ({coins}) => {
     return (
-        <header className="w-[90%] mx-auto mt-12 border-b-2">
-            <div className="flex flex-col md:flex-row md:justify-between items-center my-8 space-y-4">
+        <header className="sticky top-0 bg-white z-10  mt-8 border-b-2">
+            <div className="flex flex-col md:flex-row md:justify-between items-center my-8 space-y-4 w-[90%] mx-auto">
                 {/* Logo */} 
-                {/* <div><img src="../src/assets/images/logo.png" alt="" /></div> */}
                 <div><img src={profile} alt="" /></div>
 
                 {/* menu end */}

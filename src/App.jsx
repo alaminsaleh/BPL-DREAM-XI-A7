@@ -27,6 +27,14 @@ function App() {
 
   const handleAddCoins = () => {
     setCoin(coins + 3000000);
+    toast.success('Credit Added to your account', {
+      position: "top-center",
+      autoClose: 2000,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      icon: "✔️"
+    });
   };
 
   const handleSelectPlayer = (player) => {
@@ -67,6 +75,11 @@ function App() {
 
   const handleRemovePlayer = (id) => {
     setSelectedPlayers(selectedPlayers.filter(player => player.id !== id));
+    toast.error('Removed the player!', {
+      position: "top-center",
+      autoClose: 3000,
+      icon: "⚠️"
+    });
   };
 
   const handleAddMorePlayer = () => {
@@ -90,7 +103,8 @@ function App() {
         <Players onSelectPlayer={handleSelectPlayer}></Players>
       ) : (
         <SelectedInfo players={selectedPlayers} onRemovePlayer={handleRemovePlayer}
-          handleAddMorePlayer={handleAddMorePlayer}></SelectedInfo>
+          handleAddMorePlayer={handleAddMorePlayer}
+          ></SelectedInfo>
       )}
       <Footer></Footer>
       <UpperCard></UpperCard>

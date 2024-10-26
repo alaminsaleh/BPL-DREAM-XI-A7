@@ -21,7 +21,7 @@ const Banner = ({ handleAddCoins }) => {
                     
                     <div className="border border-[#E7FE29] rounded-lg p-1 inline-block shadow-lg">
                         <button
-                            onClick={handleAddCoins}
+                            onClick={handleAddCoins} 
                             className="bg-[#E7FE29] border border-[#E7FE29] text-black font-semibold py-2 px-4 rounded-lg shadow-lg"
                         >
                             Claim Free Credit
@@ -34,3 +34,4 @@ const Banner = ({ handleAddCoins }) => {
 };
 
 export default Banner;
+

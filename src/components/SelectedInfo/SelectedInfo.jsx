@@ -33,3 +33,4 @@ const SelectedInfo = ({ players, onRemovePlayer, handleAddMorePlayer }) => {
 
 export default SelectedInfo;
 
+
