@@ -6,14 +6,15 @@ const SelectedInfo = ({ players, onRemovePlayer, handleAddMorePlayer }) => {
                 {players.map(player => (
                     <div key={player.id} className="flex items-center justify-between p-4 border rounded-lg">
                         <div className="flex items-center">
-                            <img src={player.batsman_img} alt={player.name} className="w-16 h-16 mr-4 rounded-full" />
+                            <img src={player.batsman_img} alt={player.name} className="w-20 h-20 mr-4 rounded-full" />
                             <div>
                                 <h3 className="text-lg font-bold">{player.name}</h3>
                                 <p>{player.batting_type}</p>
+                                <p className="font-bold ">Price: ${player.price}</p>
                             </div>
                         </div>
                         <button onClick={() => onRemovePlayer(player.id)} className="text-red-500">
-                            <i className="fas fa-trash-alt"></i>
+                            <i className="fa-xl fas fa-trash-alt"></i>
                         </button>
                     </div>
                 ))}

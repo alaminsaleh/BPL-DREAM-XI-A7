@@ -34,7 +34,7 @@ const Players = ({ onSelectPlayer }) => {
               </div>
               <div className="flex justify-between items-center">
                 <h1>Price: ${player.price}</h1>
-                <button onClick={() => onSelectPlayer(player)} className="border-2  p-1 hover:bg-green-300">
+                <button onClick={() => onSelectPlayer(player)} className="border-2  p-1 hover:bg-[#E7FE29]">
                   Choose Player
                 </button>
               </div>
