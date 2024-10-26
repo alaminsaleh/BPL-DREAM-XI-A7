@@ -1,6 +1,6 @@
 const UpperCard = () => {
     return (
-        <div className="p-3 border border-gray-300 rounded-3xl w-[90%] sm:w-[70%] mx-auto my-6 sm:my-8 md:my-10 relative md:-mt-[51rem] -mt-[68rem]">
+        <div className="p-3 border border-gray-300 rounded-3xl w-[90%] sm:w-[70%] mx-auto my-6 sm:my-8 md:my-10 relative md:-mt-[51rem] -mt-[72rem]">
             <div
                 className="hero bg-cover bg-no-repeat p-6 sm:p-12 md:p-10 rounded-3xl w-full py-6"
                 style={{
