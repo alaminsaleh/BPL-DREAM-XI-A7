@@ -5,7 +5,7 @@ const Footer = () => {
         <footer className="bg-neutral  text-neutral-content p-10  mt-[270px] md:mt-[230px] relative">
             <div className="  flex flex-col justify-between items-center space-y-8">
 
-               
+
                 <div className="mt-[100px]">
                     <img src={profile} alt="Footer Logo" className="mb-6 md:mt-10 mx-auto" />
                 </div>
@@ -53,10 +53,9 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className='w-full border-t-2 border-gray-600 mt-8 text-gray-300 text-center mb-3'>
-                <small>@2024 Al Amin All Rights Reserved.</small>
+            <div className=' w-full border-t-2 border-gray-600 mt-8 text-gray-300 text-center mb-3 '>
+                <small >@2024 Al Amin All Rights Reserved.</small>
             </div>
-
         </footer>
     );
 };

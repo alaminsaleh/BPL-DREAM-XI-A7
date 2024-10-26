@@ -7,7 +7,7 @@ import Available from './components/AvailableSection/Available';
 import SelectedInfo from './components/SelectedInfo/SelectedInfo';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import UpperCard from './components/UpperCard/UpperCard';
+import Newsletter from './components/Newsletter/Newsletter';
 import Footer from './components/Footer/Footer';
 
 function App() {
@@ -107,7 +107,7 @@ function App() {
           ></SelectedInfo>
       )}
       <Footer></Footer>
-      <UpperCard></UpperCard>
+      <Newsletter></Newsletter>
     </div>
   );
 }
